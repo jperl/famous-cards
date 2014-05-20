@@ -1,4 +1,4 @@
-define(function (require) {
+define(function (require, exports, module) {
     var EventHandler = require('famous/core/EventHandler');
     var Transform = require('famous/core/Transform');
     var View = require('famous/core/View');
@@ -11,7 +11,7 @@ define(function (require) {
     var Scrollview = require('famous/views/Scrollview');
     var Utility = require('famous/utilities/Utility');
 
-    var Tools = require('./Tools');
+    var Tools = require('famous-cards/Tools');
 
     /**
      * Track user scrolling to update the scale of the cards.
@@ -334,5 +334,5 @@ define(function (require) {
         };
     };
 
-    return CardScrollview;
+    module.exports = CardScrollview;
 });

@@ -1,4 +1,4 @@
-define(function () {
+define(function (require, exports, module) {
     var Tools = {};
 
     /**
@@ -59,5 +59,5 @@ define(function () {
         scrollview.setPosition(position);
     };
 
-    return Tools;
+    module.exports = Tools;
 });

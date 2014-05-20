@@ -1,4 +1,4 @@
-define(function (require) {
+define(function (require, exports, module) {
     var RenderNode = require('famous/core/RenderNode');
     var Surface = require('famous/core/Surface');
     var View = require('famous/core/View');
@@ -23,5 +23,5 @@ define(function (require) {
     Card.prototype.dispose = function () {
     };
 
-    return Card;
+    module.exports = Card;
 });
